@@ -18,12 +18,21 @@ static const char col_gray3[]       = "#bbbbbb";
 static const char col_gray4[]       = "#eeeeee";
 static const char col_cyan[]        = "#005577";
 static const char col_urgborder[]   = "#ff0000";
+#define wal "/home/rushabh/.cache/wal/colors-wal-dwm.h"
+
+#if __has_include(wal)
+#include wal
+#else
+static const char col_gray3[]       = "#bbbbbb";
+static const char col_gray4[]       = "#eeeeee";
+static const char col_cyan[]        = "#005577";
+static const char col_urgborder[]   = "#ff0000";
 static const char *colors[][3]      = {
-	/*               fg         bg         border   */
-	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
-	[SchemeSel]  = { col_gray4, col_cyan,  col_cyan  },
-	[SchemeUrg]  = { col_gray4, col_cyan,  col_urgborder  },
-};
+   /*               fg         bg         border   */
+   [SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
+   [SchemeSel]  = { col_gray4, col_cyan,  col_cyan  },
+   [SchemeUrg]  = { col_gray4, col_cyan,  col_urgborder  },
+#endif
 
 /* tagging */
 static const char *tags[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9" };

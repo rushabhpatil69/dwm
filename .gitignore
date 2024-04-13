@@ -1,2 +1,7 @@
 patches/*
 config.h
+dwm
+drw.o
+dwm.o
+util.o
+
