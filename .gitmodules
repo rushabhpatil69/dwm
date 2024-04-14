@@ -1,6 +1,1 @@
-[submodule "st"]
-	path = st
-	url = https://github.com/siduck/st
-[submodule "dmenu"]
-	path = dmenu
-	url = git://git.suckless.org/dmenu
+
