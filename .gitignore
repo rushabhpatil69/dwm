@@ -3,6 +3,7 @@ config.h
 dwm
 drw.o
 dwm.o
+*.diff
 util.o
 *.rej
 *.orig
